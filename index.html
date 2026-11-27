@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <title>Kwanza-Play</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">K</span><span>Kwanza-Play</span></a>
+    <button class="menu" id="menuBtn" aria-label="Abrir menu">☰</button>
+    <nav id="nav">
+      <a href="#inicio">Início</a><a href="#jogar">Jogar</a><a href="#carteira">Carteira</a><a href="#regras">Regras</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <span class="eyebrow">DIVERSÃO • PERGUNTAS • DESAFIOS</span>
+        <h1>Joga, aprende e<br><em>acumula pontos.</em></h1>
+        <p>Bem-vindo ao Kwanza-Play. Participa nos desafios e acompanha os teus pontos num só lugar.</p>
+        <a class="primary" href="#jogar">Começar a jogar</a>
+      </div>
+      <div class="hero-card">
+        <div class="coin">Kz</div>
+        <span>OS TEUS PONTOS</span>
+        <strong id="heroPoints">0</strong>
+        <small>Saldo demonstrativo</small>
+      </div>
+    </section>
+
+    <section class="stats">
+      <article><span>🎮</span><div><b>Jogos</b><small>Desafios disponíveis</small></div></article>
+      <article><span>❓</span><div><b>Perguntas</b><small>Testa os teus conhecimentos</small></div></article>
+      <article><span>⭐</span><div><b>Pontos</b><small>Vê a tua pontuação</small></div></article>
+    </section>
+
+    <section class="section" id="jogar">
+      <div class="section-heading"><div><span class="eyebrow">ÁREA DE JOGO</span><h2>Desafio do dia</h2></div><span class="tag">DEMONSTRAÇÃO</span></div>
+      <div class="game">
+        <div class="game-icon">🧠</div>
+        <div class="game-content">
+          <h3>Pergunta rápida</h3>
+          <p id="question">Qual é a capital de Angola?</p>
+          <div class="answers" id="answers">
+            <button data-answer="Benguela">Benguela</button>
+            <button data-answer="Luanda">Luanda</button>
+            <button data-answer="Huambo">Huambo</button>
+          </div>
+          <p class="feedback" id="feedback" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wallet" id="carteira">
+      <div><span class="eyebrow">A TUA CONTA</span><h2>Carteira de pontos</h2><p>Os pontos abaixo são apenas de demonstração. Não representam dinheiro nem podem ser levantados nesta versão.</p></div>
+      <div class="wallet-box"><span>Saldo de pontos</span><strong><b id="points">0</b> pts</strong><button id="historyBtn" class="secondary">Ver atividade</button><p id="history" class="history">Ainda não há atividade.</p></div>
+    </section>
+
+    <section class="section" id="regras">
+      <span class="eyebrow">TRANSPARÊNCIA</span><h2>Regras e segurança</h2>
+      <div class="rules">
+        <p><b>Publicidade:</b> os espaços publicitários só devem ser ativados depois de integrar uma rede de anúncios aprovada.</p>
+        <p><b>Prémios e levantamentos:</b> exigem regras públicas, validação contra fraude, parceiro de pagamentos e revisão legal antes de receber dinheiro real.</p>
+        <p><b>Privacidade:</b> esta demonstração não recolhe nem envia dados pessoais e não tem registo ou início de sessão.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer><b>Kwanza-Play</b><span>Projeto em desenvolvimento • Angola</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
