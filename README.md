@@ -1,2 +1,2 @@
-# Kwanza---Play
+# Kwanza-Play
 Visibilidade privada
